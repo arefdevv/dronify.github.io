@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #141e30;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+#logo{
+    color:rgb(230, 229, 229) ;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.nav-header{
+    min-height: 10vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+  z-index: 2;
+  position: relative;
+
+}
+
+  
+.line1, .line2{
+    width: 40px;
+    min-height: 3px;
+    margin: 5px;
+    background-color: rgb(230, 229, 229);
+    pointer-events: none;
+}
+
+
+
+.slide{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(230, 229, 229);
+    background-color: #141e30;
+
+}
+
+.hero-description{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-basis: 40px;
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.hero-img{
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.fashion span{
+    color: rgb(39, 171, 171);
+}
+.mountain span{
+    color: rgb(78, 188, 23);
+}
+.hike span{
+    color: rgb(187, 84, 15);
+}
+
+.hero-description h2{
+    text-align: left;
+    font-size: 48px;
+}
+
+.hero-description p{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.explore{
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 150px;
+    background:none;
+    text-decoration: none;
+    color: rgb(230, 229, 229);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.hero-description {
+    margin-left: 20px;
+    display: flex;
+    align-items: start;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 253, 253);
+    display: flex;
+    justify-content: space-around;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.nav-links{
+    margin-left: 200px;
+    list-style-type: none;
+    margin-top: 200px;
+    margin-right: 300px;
+}
+
+.nav-links li{
+    padding: 30px;
+    font-size: 64px;
+}
+
+.contact h3{
+    text-align: left;
+    font-size: 56px;
+    padding: 30px;
+    font-weight: 700;
+    
+    
+}
+.contact{
+    flex-basis: 50rem;
+    margin-top: 250px;
+}
+
+.contact p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 2;
+    
+}
+
+.reveal-img,
+.reveal-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #141e30;
+    top: 0;
+    left: 0;
+    
+}
+
+body.hide{
+overflow: hidden;
+}
+
+
+
+/* // second page */
+
+
+.main-header{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 64px;
+}
+.one, .two, .three{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.img{
+    height: 80vh;
+    
+}
+
+
+.text{
+    flex: 1;
+    position: relative;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1500ms ease;
+}
+
+
+.drone1:hover{
+    transform: rotate(360deg);
+    
+}
+.drone2:hover{
+    transform: rotate(360deg);
+    
+}
+.drone3:hover{
+    transform: rotate(360deg);
+    
+}
+
+.text h1{
+    font-size: 56px;
+    padding: 20px 0;
+}
+
+.text p{
+    font-size: 32px;
+    padding: 30px 30px 0 0;
+    margin-bottom: 300px;
+    text-align: left;
+
+}
+
+
+
+main{
+    position: absolute;
+}
+
+body{
+    position: relative;
+}
+
+
+.swipe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.swipe1{
+    background: #f6cd61 ;
+    z-index: 5;
+}
+
+.swipe2{
+    background-color: #fe9c8f ;
+    z-index: 4;
+}
+
+.swipe3{
+    background-color: #009688;
+    z-index: 3;
+}
+
+.bubbly-button {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ff0081;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  }
+  .bubbly-button:focus {
+    outline: 0;
+  }
+  .bubbly-button:before, .bubbly-button:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  .bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  }
+  .bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  }
+  .bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #e60074;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  .bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+  }
+  .bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+  }
+  
+  @keyframes topBubbles {
+    0% {
+      background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100% {
+      background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+  @keyframes bottomBubbles {
+    0% {
+      background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50% {
+      background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100% {
+      background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+      background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+  }
+
+
+
+  @media screen and ( max-width: 1024px){
+
+    /* body, html{
+        overflow-x: hidden;
+    } */
+      main {
+          width: 100%;
+          margin: 0;
+      }
+
+      .slides{
+          display: block;
+          width: 100%;
+          text-align: center;
+      }
+      .hero-description{
+          padding: 0;
+
+      }
+      .hero-description h2{
+          font-size: 32px;
+          padding: 15px 0px;
+      }
+
+      .hero-description p{
+        padding: 30px 15px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+      }
+
+      .bubbly-button{
+          width: 100%;
+      }
+    
+    .main-header{
+        font-size: 32px;
+    }
+
+    .text h1{
+        font-size: 24px;
+    }
+
+    .text p{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .img  {
+        height: 50vh;
+    }
+
+    .img img{
+        width: 100%;
+    }
+
+    .nav-links{
+        margin-left: 200px;
+    }
+    .nav-links li{
+        font-size: 32px;
+    }
+      
+  }
